@@ -1,0 +1,16 @@
+<form action='update_accounts' method='post'>
+  <p>which account are you updating?</p>
+  <select name='which_account'>
+    <% @bank.get_member(Session[:member_id]).account_list.each do |i| %>
+      <option id=<%= i.account_number %>><%= i.account_number %></option>
+    <% end %>
+  </select>
+
+  <p>what would you like to do?</p>
+  <select name='which_action'>
+    <option id='deposit'>deposit money</option>
+    <option id='withdraw'>withdraw money</option>
+    <option id='statement'>view statement</option>
+  </select>
+
+</form>

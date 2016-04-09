@@ -1,0 +1,112 @@
+@import 'reset';
+
+$back-light: rgba(215, 215, 225, .2);
+$back-medium: rgba(40, 40, 50, .5);
+$back-heavy: rgba(30, 31, 52, 1);
+$font-fun: rgba(200, 200, 30, .5);
+$font-funner: rgba(205,10,10, 1);
+$border-fun: rgba(200, 200, 30, 1);
+$back-image: url('/assets/images/moonback-big.jpg');
+
+*,
+*:before,
+*:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 100;
+ # mix-blend-mode: difference;
+ # background-color: rgba(40, 30, 70, 1);
+  color: rgba(40,74,95,1);
+}
+
+
+html {
+  font-size: 1.5rem;
+  font-family: Helvetica, sans-serif;
+  background-color: $back-medium;
+  color: $back-heavy;
+  font-weight: 100;
+  line-height: 20px;
+}
+
+header {
+  background-color: $back-light;
+  color: $font-fun;
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed $back-medium;
+  border-radius: 10px 10px 0 0;
+}
+
+.header-depth {
+  background-color: $back-light;
+  border: 2px dashed $back-medium;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+nav {
+  margin: 15px;
+  padding: 10px;
+  display: inline-block;
+  width: 23%;  
+  float: right;
+  height: 100%;
+  border-right: 2px dashed $back-medium;
+  background-color: rgba(150,190,240,.5);
+}
+
+.container {
+  margin: 100px;
+  padding: 100px;
+  padding-top: 40px;
+  border: 2px solid $border-fun;
+  border-radius: 20px;
+  background-image: $back-image;
+}
+
+.content {
+  border: 2px dashed $back-light;
+  border-radius: 0 0 10px 10px;
+}
+
+.forms {
+  padding: 90px;
+  line-height: 20px;
+  text-align: left;
+  display: inline-block;
+  background-color: rgba(250,250,250,.3);
+  border: 1px dashed #ccc;
+  border-left: none;
+  width: 75%;
+}
+
+.subsub {
+  display: inline-block;
+  width: 75%;
+  padding: 10px;
+}
+
+.user-specific {
+  color: rgba(80, 230, 50, 1)
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+
+

@@ -1,0 +1,3 @@
+<p>yo, your balance is <%= @account.balance %> and hopefully your account number is <%= @bank.get_member(Session[:member_id]).get_account(Session[:account_id]).account_number %></p>
+
+<p>transaction history? <%= @bank.transaction_history %></p>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>moonbank #1</title>
+    <link href='/assets/stylesheets/main.css' rel='stylesheet' type='text/css'/>
+  </head>
+
+  <body class="container">
+  <header> 
+    <div class="header-depth">
+      <h1><%= @title %></h1>
+      <h2><%= @subtitle %></h2>
+    </div>
+  </header>
+     
+  <div class="content">
+    <nav>
+      <u>banking options</u>
+      <% Options.each do |id, link| %>
+	  <a href=<%= link %>><%= id %></a></br>
+      <% end %>
+    </nav>
+    <div class="forms">
+      <p class="subsub"><%= @subsubtitle %></p></br></br>
+      <%= yield %>
+    </div>
+  </div>
+ 
+  </body>
+
+</html>
