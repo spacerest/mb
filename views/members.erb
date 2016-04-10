@@ -1,0 +1,8 @@
+<form action='signup_confirm' method='post'>
+  <select name='change_member'>
+  <% Session[:members].each do |i| %>
+    <option value='<%= i %>'><%= i %></option>
+  <% end %>
+  </select>
+  <button type='submit'>submit</button>
+</form>
